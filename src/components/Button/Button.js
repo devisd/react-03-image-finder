@@ -3,7 +3,12 @@ import css from './Button.module.css';
 
 const Button = () => {
   return (
-    <div>
+    <div
+      style={{
+        display: 'flex',
+        justifyContent: 'center',
+      }}
+    >
       <a href="http://google.com" className={css.Button}>
         Load more
       </a>
