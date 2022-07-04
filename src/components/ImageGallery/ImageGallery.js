@@ -1,9 +1,13 @@
 import React from 'react';
+import ImageGalleryItem from 'components/ImageGalleryItem';
+import css from './ImageGallery.module.css';
 
-const ImageGallery = () => {
+const ImageGallery = ({ data }) => {
   return (
     <div>
-      <ul class="gallery">{/* Набор <li> с изображениями */}</ul>
+      <ul className={css.ImageGallery}>
+        <ImageGalleryItem data={data} />
+      </ul>
     </div>
   );
 };
