@@ -16,7 +16,7 @@ class Button extends Component {
   };
   render() {
     return (
-      <div style={{ display: 'flex', justifyContent: 'center' }}>
+      <div className={css.Button_container}>
         <button onClick={this.onPageChange} className={css.Button}>
           Load more
         </button>

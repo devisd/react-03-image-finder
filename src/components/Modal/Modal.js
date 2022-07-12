@@ -5,7 +5,7 @@ const Modal = () => {
   return (
     <div className={css.Overlay}>
       <div className={css.Modal}>
-        <img src="" alt="" />
+        <img src={this.props.images} alt={this.props.tags} />
       </div>
     </div>
   );
