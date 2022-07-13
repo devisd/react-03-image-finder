@@ -1,28 +1,20 @@
-import React, { Component } from 'react';
-import css from './Button.module.css';
+import React from 'react';
+import PropTypes from 'prop-types';
+import './Button.css';
 
-class Button extends Component {
-  state = {
-    page: 1,
-  };
+const Button = ({ text, onLoadClick }) => {
+  return (
+    <div className="Button-container">
+      <button className="Button" type="button" onClick={onLoadClick}>
+        {text}
+      </button>
+    </div>
+  );
+};
 
-  onPageChange = () => {
-    this.setState(prevState => {
-      return {
-        page: prevState.page + 1,
-      };
-    });
-    this.props.onClick(this.state.page);
-  };
-  render() {
-    return (
-      <div className={css.Button_container}>
-        <button onClick={this.onPageChange} className={css.Button}>
-          Load more
-        </button>
-      </div>
-    );
-  }
-}
+Button.propTypes = {
+  text: PropTypes.string.isRequired,
+  onLoadClick: PropTypes.func,
+};
 
 export default Button;

@@ -1,7 +1,7 @@
 /*
 * Стили компонента Buton (Load more)
 */
-.Button_container {
+.Button-container {
   display: flex;
   justify-content: center;
 }
