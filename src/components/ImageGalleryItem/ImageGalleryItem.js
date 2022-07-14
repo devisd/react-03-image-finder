@@ -1,7 +1,6 @@
 import './ImageGalleryItem.css';
 
 const ImageGalleryItem = ({ image, largeImageURL, tags, onModal }) => {
-  console.log(largeImageURL);
   return (
     <li className="ImageGalleryItem">
       <img

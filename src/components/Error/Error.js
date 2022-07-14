@@ -1,11 +1,13 @@
 import errorImage from './error.jpg';
-import css from './Error.module.css';
+import './Error.css';
 
-export default function ErrorView({ message }) {
+export default function ErrorView() {
   return (
     <div>
-      <img className={css.error__img} src={errorImage} alt="всё пропало" />
-      <h2 className={css.error__text}>{message}</h2>
+      <img className="error__img" src={errorImage} alt="всё пропало" />
+      <h2 className="error__text">
+        Нет искомой темы. Попробуйте ввести другую тему для поиска
+      </h2>
     </div>
   );
 }

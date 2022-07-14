@@ -2,7 +2,6 @@ import ImageGalleryItem from '../ImageGalleryItem';
 import './ImageGallery.css';
 
 const ImageGallery = ({ hits, onImageClick }) => {
-  console.log(hits);
   return (
     <ul className="ImageGallery">
       {hits.map(({ id, largeImageURL, webformatURL, tags }) => (
